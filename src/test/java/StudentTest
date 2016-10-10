@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+
+public class StudentTest {
+
+    @Test
+    public void getUsername() throws Exception {
+
+
+        Student john = new Student();
+
+        john.setName("john");
+        john.setAge("20");
+
+        String result = john.getUsername();
+        assertEquals("john20", result);
+
+    }
+
+}
